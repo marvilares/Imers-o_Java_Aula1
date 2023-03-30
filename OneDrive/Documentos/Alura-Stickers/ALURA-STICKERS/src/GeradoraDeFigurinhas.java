@@ -24,14 +24,13 @@ public class GeradoraDeFigurinhas {
         Graphics2D graphics = (Graphics2D) novaImagem.getGraphics();
         graphics.drawImage(ImagenOriginal, 0, 0 , null);
 
-    
         //configurar a fonte
         var fonte = new Font(Font.SANS_SERIF,Font.BOLD, 64);
         graphics.setColor(Color.GREEN);
         graphics.setFont(fonte);
 
         //escrever uma frase na nova imagem
-        graphics.drawString("TOPZERA", 0, novaaltura - 200);
+        graphics.drawString("TOPZERA", 100, novaaltura - 200);
 
 
         //escrever a nova imagem em um arquivo
